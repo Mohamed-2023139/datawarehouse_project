@@ -6,6 +6,9 @@ Script Purpose:
     This stored procedure loads data into the 'silver' from bronze Layer. 
     It performs the following actions:
     - Truncates the Silver tables  and transofrm it before loading data 
+        this involve:
+           Handling null values and Standardizing or normalizing values
+           Recalculating some values
 ===============================================================================
 */
 CREATE OR ALTER PROCEDURE silver.load_silver AS
